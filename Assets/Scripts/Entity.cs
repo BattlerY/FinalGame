@@ -1,6 +1,12 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
 
+public enum Factions
+{
+    Hero,
+    Enemy
+}
+
 public abstract class Entity : MonoBehaviour
 {
     [SerializeField] private int _maxHealth;
@@ -13,28 +19,28 @@ public abstract class Entity : MonoBehaviour
     public bool IsDead => _curentHealth <= 0;
     public float HealthRatio => 1f * _curentHealth / _maxHealth;
 
-    public event UnityAction HealthChanged;
-
     private void Start()
+    {
+        ResetHealth();
+    }
+
+    public virtual void ResetHealth()
     {
         _curentHealth = _maxHealth;
     }
 
-    public void TakeDamage(int damage, bool isMage=false)
+    public virtual void TakeDamage(int damage, bool isMage=false)
     {
         if (isMage==false) 
             damage = Mathf.Max(damage - _armor, 1);
 
         _curentHealth -= damage;
 
-        if(this is Stronghold)
-             HealthChanged();
-
         if (IsDead)
-            OnDying();
+            Destroy();
     }
 
-    public void UpArmor(int armor) => _armor += armor;
+    protected void UpArmor(int armor) => _armor += armor;
     
-    public abstract void OnDying();
+    protected abstract void Destroy();
 }

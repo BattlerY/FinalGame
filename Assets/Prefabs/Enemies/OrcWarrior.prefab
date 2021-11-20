@@ -149,5 +149,5 @@ MonoBehaviour:
   _speed: 3
   _attackRange: 1.2
   _attackSpeed: 1.5
-  _reward: 15
+  _reward: 20
   _cost: 0

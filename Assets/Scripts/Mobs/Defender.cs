@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Defender : Mob
+public class Defender : Unit
 {
     [SerializeField] private int ArmorUp;
     public override void UseAbilities(Entity entity)

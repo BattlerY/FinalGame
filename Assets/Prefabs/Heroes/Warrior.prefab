@@ -116,15 +116,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65f34e4a930f29247833e72a1956eafe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 70
   _armor: 10
   _faction: 0
-  Damage: 20
+  Damage: 15
   _speed: 2
   _attackRange: 2
   _attackSpeed: 1
   _reward: 0
-  _cost: 50
+  _cost: 30
 --- !u!61 &3296074877045022216
 BoxCollider2D:
   m_ObjectHideFlags: 0

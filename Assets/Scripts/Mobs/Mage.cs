@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Mage : Mob
+public class Mage : Unit
 {
     [SerializeField] private ParticleSystem _effect;
     public override void UseAbilities(Entity entity)

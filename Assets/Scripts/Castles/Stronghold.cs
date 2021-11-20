@@ -10,23 +10,26 @@ public class Stronghold : Entity
     [SerializeField] private HeroSpawner _heroSpawner;
     [SerializeField] private Slider _healthBar;
 
-    private void OnEnable()
+    public override void TakeDamage(int damage, bool isMage = false)
     {
-        HealthChanged += OnHealthChanged;
-    }
-    private void OnDisable()
-    {
-        HealthChanged -= OnHealthChanged;
+        base.TakeDamage(damage, isMage);
+        UpdateHealthBar();
     }
 
-    public override void OnDying()
+    public override void ResetHealth()
+    {
+        base.ResetHealth();
+        UpdateHealthBar();
+    }
+
+    protected override void Destroy()
     {
         _enemySpawner.CleanLevel();
         _heroSpawner.CleanLevel();
         _endField.SetActive(true);
     }
 
-    private void OnHealthChanged()
+    private void UpdateHealthBar()
     {
         _healthBar.value = HealthRatio;
     }

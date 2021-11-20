@@ -95,7 +95,7 @@ Animator:
   m_GameObject: {fileID: 870540975731246590}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: daf1c4696e8805c4aa4fe738420acff5, type: 2}
+  m_Controller: {fileID: 9100000, guid: 451239c5c3ca32d459f574443056dc5c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -147,8 +147,8 @@ MonoBehaviour:
   _faction: 1
   Damage: 20
   _speed: 2
-  _attackRange: 4
+  _attackRange: 3
   _attackSpeed: 2
-  _reward: 20
+  _reward: 40
   _cost: 0
-  _effect: {fileID: 0}
+  _effect: {fileID: 2271424313783848086, guid: af7f22b7660986f42ba16f26da8eb82e, type: 3}

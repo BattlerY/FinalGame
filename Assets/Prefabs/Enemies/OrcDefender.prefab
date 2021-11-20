@@ -149,6 +149,6 @@ MonoBehaviour:
   _speed: 1
   _attackRange: 1
   _attackSpeed: 2
-  _reward: 10
+  _reward: 30
   _cost: 0
   ArmorUp: 1

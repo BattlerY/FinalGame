@@ -74,6 +74,78 @@ TextureImporter:
   - first:
       213: 552900063559834478
     second: Hero_23
+  - first:
+      213: 2971653748508199937
+    second: mage_0
+  - first:
+      213: -1182937539813507409
+    second: mage_1
+  - first:
+      213: 7310728498343965544
+    second: mage_2
+  - first:
+      213: -7672788158911853900
+    second: mage_3
+  - first:
+      213: 8619904004745130942
+    second: mage_4
+  - first:
+      213: -6014854275350682528
+    second: mage_5
+  - first:
+      213: 5179906125871286598
+    second: mage_6
+  - first:
+      213: -1308827184595644429
+    second: mage_7
+  - first:
+      213: 2640012314773392344
+    second: mage_8
+  - first:
+      213: -2056482287553655689
+    second: mage_9
+  - first:
+      213: -8995485352130813372
+    second: mage_10
+  - first:
+      213: 8886161708615391911
+    second: mage_11
+  - first:
+      213: -2392962986800102977
+    second: mage_12
+  - first:
+      213: 537988590183208327
+    second: mage_13
+  - first:
+      213: 2913310984789112361
+    second: mage_14
+  - first:
+      213: 5583017019949265044
+    second: mage_15
+  - first:
+      213: -8251936894537551026
+    second: mage_16
+  - first:
+      213: 2551167551238079723
+    second: mage_17
+  - first:
+      213: -7087717387246710143
+    second: mage_18
+  - first:
+      213: 4862037640250152518
+    second: mage_19
+  - first:
+      213: 4961334136761280368
+    second: mage_20
+  - first:
+      213: -7578517801142246702
+    second: mage_21
+  - first:
+      213: 398752402411312038
+    second: mage_22
+  - first:
+      213: -2105713358603744209
+    second: mage_23
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -207,7 +279,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Hero_0
+      name: mage_0
       rect:
         serializedVersion: 2
         x: 89
@@ -221,14 +293,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a11295c6cc882baa0800000000000000
-      internalID: -6146700129834819302
+      spriteID: 10c0a4bf65f6d3920800000000000000
+      internalID: 2971653748508199937
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hero_1
+      name: mage_1
       rect:
         serializedVersion: 2
         x: 345
@@ -242,14 +314,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0ea570aa7ba2de70800000000000000
-      internalID: 9138555137054584332
+      spriteID: faef0f3339c559fe0800000000000000
+      internalID: -1182937539813507409
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hero_2
+      name: mage_2
       rect:
         serializedVersion: 2
         x: 600
@@ -263,14 +335,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb4881a9f29b78420800000000000000
-      internalID: 2632276121321243838
+      spriteID: 863fd19d5dce47560800000000000000
+      internalID: 7310728498343965544
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hero_3
+      name: mage_3
       rect:
         serializedVersion: 2
         x: 856
@@ -284,14 +356,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18950ee28e38de620800000000000000
-      internalID: 2805043176163793281
+      spriteID: 4ba4c3752d7c48590800000000000000
+      internalID: -7672788158911853900
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hero_4
+      name: mage_4
       rect:
         serializedVersion: 2
         x: 1112
@@ -305,14 +377,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1398a776d871df030800000000000000
-      internalID: 3530003579022248241
+      spriteID: eb3fcc8a50d00a770800000000000000
+      internalID: 8619904004745130942
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hero_5
+      name: mage_5
       rect:
         serializedVersion: 2
         x: 1368
@@ -326,14 +398,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 23d5d3e58528b5c70800000000000000
-      internalID: 8960899199633546546
+      spriteID: 064abf597e1f68ca0800000000000000
+      internalID: -6014854275350682528
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hero_6
+      name: mage_6
       rect:
         serializedVersion: 2
         x: 1624
@@ -347,14 +419,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 93d2881de2553b610800000000000000
-      internalID: 1635744749237841209
+      spriteID: 6498d6a5d29b2e740800000000000000
+      internalID: 5179906125871286598
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hero_7
+      name: mage_7
       rect:
         serializedVersion: 2
         x: 1881
@@ -368,14 +440,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: abef1102d1c428c30800000000000000
-      internalID: 4360131077223874234
+      spriteID: 3ff4dcd2c9c16dde0800000000000000
+      internalID: -1308827184595644429
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hero_8
+      name: mage_8
       rect:
         serializedVersion: 2
         x: 81
@@ -389,14 +461,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 437f65c411103dcc0800000000000000
-      internalID: -3687602496079464652
+      spriteID: 8db89b0863533a420800000000000000
+      internalID: 2640012314773392344
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hero_9
+      name: mage_9
       rect:
         serializedVersion: 2
         x: 331
@@ -410,14 +482,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd9d21788664342e0800000000000000
-      internalID: -2142791582941521445
+      spriteID: 77c4b735148e573e0800000000000000
+      internalID: -2056482287553655689
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hero_10
+      name: mage_10
       rect:
         serializedVersion: 2
         x: 581
@@ -431,14 +503,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0fe96344730566160800000000000000
-      internalID: 7018385267601350384
+      spriteID: 442630c7bbd992380800000000000000
+      internalID: -8995485352130813372
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hero_11
+      name: mage_11
       rect:
         serializedVersion: 2
         x: 834
@@ -452,14 +524,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: faaf55291b0bb9a10800000000000000
-      internalID: 1917320343087086255
+      spriteID: 7aad2ba3efcf15b70800000000000000
+      internalID: 8886161708615391911
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hero_12
+      name: mage_12
       rect:
         serializedVersion: 2
         x: 1091
@@ -473,14 +545,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aafd7cc3e3ade7ba0800000000000000
-      internalID: -6089189685315772502
+      spriteID: fb14f1b87dc7aced0800000000000000
+      internalID: -2392962986800102977
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hero_13
+      name: mage_13
       rect:
         serializedVersion: 2
         x: 1363
@@ -494,14 +566,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0bba397a3eb02abf0800000000000000
-      internalID: -314675951565558864
+      spriteID: 785551bb5c1577700800000000000000
+      internalID: 537988590183208327
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hero_14
+      name: mage_14
       rect:
         serializedVersion: 2
         x: 1624
@@ -515,14 +587,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3318e1f5895cf7fa0800000000000000
-      internalID: -5800700536808373965
+      spriteID: 9263990c7e82e6820800000000000000
+      internalID: 2913310984789112361
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hero_15
+      name: mage_15
       rect:
         serializedVersion: 2
         x: 1873
@@ -536,14 +608,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e1be0f2b84b6b8c0800000000000000
-      internalID: -3983798310479679007
+      spriteID: 4903909466cda7d40800000000000000
+      internalID: 5583017019949265044
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hero_16
+      name: mage_16
       rect:
         serializedVersion: 2
         x: 81
@@ -557,14 +629,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f34f5aaceb9c6e280800000000000000
-      internalID: -9014295782854626241
+      spriteID: e4336247d1b3b7d80800000000000000
+      internalID: -8251936894537551026
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hero_17
+      name: mage_17
       rect:
         serializedVersion: 2
         x: 332
@@ -578,14 +650,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5288e9508ecabed90800000000000000
-      internalID: -7067365077701195739
+      spriteID: be48c060f51976320800000000000000
+      internalID: 2551167551238079723
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hero_18
+      name: mage_18
       rect:
         serializedVersion: 2
         x: 583
@@ -599,14 +671,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e4471e3f171adca0800000000000000
-      internalID: -5991450931309886240
+      spriteID: 182dcc0b69e53ad90800000000000000
+      internalID: -7087717387246710143
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hero_19
+      name: mage_19
       rect:
         serializedVersion: 2
         x: 832
@@ -620,14 +692,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ce1d14062173eba0800000000000000
-      internalID: -6060876265418842428
+      spriteID: 64650bf397d697340800000000000000
+      internalID: 4862037640250152518
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hero_20
+      name: mage_20
       rect:
         serializedVersion: 2
         x: 1076
@@ -641,14 +713,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d92a2cdce9b26a7d0800000000000000
-      internalID: -2907588548364164451
+      spriteID: 077eca17c133ad440800000000000000
+      internalID: 4961334136761280368
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hero_21
+      name: mage_21
       rect:
         serializedVersion: 2
         x: 1315
@@ -662,14 +734,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8406d103ff1441bf0800000000000000
-      internalID: -354585906375729080
+      spriteID: 2d221fa6632b3d690800000000000000
+      internalID: -7578517801142246702
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hero_22
+      name: mage_22
       rect:
         serializedVersion: 2
         x: 1563
@@ -683,14 +755,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d01453bda97c85ed0800000000000000
-      internalID: -2424968931422420723
+      spriteID: 6a35f038237a88500800000000000000
+      internalID: 398752402411312038
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hero_23
+      name: mage_23
       rect:
         serializedVersion: 2
         x: 1819
@@ -704,8 +776,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6b56ccadab4ca700800000000000000
-      internalID: 552900063559834478
+      spriteID: f2c01ad5bd007c2e0800000000000000
+      internalID: -2105713358603744209
       vertices: []
       indices: 
       edges: []

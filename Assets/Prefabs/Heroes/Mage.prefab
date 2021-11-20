@@ -74,13 +74,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: -6146700129834819302, guid: cc5fbc287df90154ca3c88350ea8ddbc,
+  m_Sprite: {fileID: 2971653748508199937, guid: cc5fbc287df90154ca3c88350ea8ddbc,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.7, y: 1.36}
+  m_Size: {x: 0.85, y: 1.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -123,7 +123,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 0.85, y: 1.2}
-    newSize: {x: 0.7, y: 1.36}
+    newSize: {x: 0.85, y: 1.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -167,10 +167,10 @@ MonoBehaviour:
   _maxHealth: 50
   _armor: 5
   _faction: 0
-  Damage: 25
+  Damage: 20
   _speed: 1
-  _attackRange: 10
+  _attackRange: 5
   _attackSpeed: 2
   _reward: 0
-  _cost: 100
+  _cost: 60
   _effect: {fileID: 2271424313783848086, guid: af7f22b7660986f42ba16f26da8eb82e, type: 3}

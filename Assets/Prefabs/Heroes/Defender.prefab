@@ -142,13 +142,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20104f3e492e7f04c92353284ded4931, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
-  _armor: 15
+  _maxHealth: 80
+  _armor: 12
   _faction: 0
-  Damage: 15
+  Damage: 12
   _speed: 1
   _attackRange: 1
-  _attackSpeed: 1
+  _attackSpeed: 2
   _reward: 0
-  _cost: 50
+  _cost: 45
   ArmorUp: 0
