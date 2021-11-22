@@ -1,6 +1,7 @@
 ﻿using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using IJunior.TypedScenes;
 
 public class Lose : MonoBehaviour
 {
@@ -12,7 +13,7 @@ public class Lose : MonoBehaviour
         _achievement.text = $"Вы смогли преодолеть {_enemySpawner.CurentWave} волн";
     }
 
-    public void Restart() => SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    public void Restart() => Game.Load();
     
     public void Quit() =>Application.Quit();  
 }

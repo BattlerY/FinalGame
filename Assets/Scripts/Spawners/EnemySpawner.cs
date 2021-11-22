@@ -26,7 +26,7 @@ public class EnemySpawner : MonoBehaviour
         foreach (var enemy in _curentEnemies)
             Destroy(enemy.gameObject);
 
-        WaveDefeated(_waves[CurentWave].Reward);
+        WaveDefeated?.Invoke(_waves[CurentWave].Reward);
     }
 
     public void StartNextVawe()
@@ -51,23 +51,26 @@ public class EnemySpawner : MonoBehaviour
 [System.Serializable]
 public class EnemyWave
 {
-    public Unit[] Enemies;
-    public int[] Counts;
-    public float Delay;
-    public int Reward;
-
+   [SerializeField] private Unit[] _enemies;
+   [SerializeField] private int[] _counts;
+   [SerializeField] private float _delay;
+   [SerializeField] private int _reward;
+    
     private List<Unit> _enemiesList;
+
+    public float Delay => _delay;
+    public int Reward => _reward;
 
     public void Init()
     {
         _enemiesList = new List<Unit>();
 
-        for (int i = 0; i < Counts.Length; i++)
+        for (int i = 0; i < _counts.Length; i++)
         {
-            while (Counts[i] > 0)
+            while (_counts[i] > 0)
             {
-                _enemiesList.Add(Enemies[i]);
-                Counts[i]--;
+                _enemiesList.Add(_enemies[i]);
+                _counts[i]--;
             }
         }
     }

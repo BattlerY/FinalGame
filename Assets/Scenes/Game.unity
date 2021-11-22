@@ -1375,6 +1375,49 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &234662302
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 234662304}
+  - component: {fileID: 234662303}
+  m_Layer: 0
+  m_Name: TypedProcessor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &234662303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 234662302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b75bc3aeafff29d4294a27937966d3bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &234662304
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 234662302}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &450948186
 GameObject:
   m_ObjectHideFlags: 0
@@ -2071,26 +2114,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _waves:
-  - Enemies:
+  - _enemies:
     - {fileID: -4247469279920477541, guid: 1fd6015f445367c4795d441646527929, type: 3}
-    - {fileID: 3145591731024280746, guid: 283f54c0feb1b1e4281244da1ca9c58f, type: 3}
-    Counts: 0500000001000000
-    Delay: 1.5
-    Reward: 50
-  - Enemies:
-    - {fileID: 3145591731024280746, guid: 283f54c0feb1b1e4281244da1ca9c58f, type: 3}
-    - {fileID: 5369176091194973818, guid: 53970625ebc2a804bbbd59d1fee2bdce, type: 3}
-    - {fileID: -4247469279920477541, guid: 1fd6015f445367c4795d441646527929, type: 3}
-    Counts: 030000000100000005000000
-    Delay: 1.75
-    Reward: 100
-  - Enemies:
-    - {fileID: 3145591731024280746, guid: 283f54c0feb1b1e4281244da1ca9c58f, type: 3}
-    - {fileID: 5369176091194973818, guid: 53970625ebc2a804bbbd59d1fee2bdce, type: 3}
-    - {fileID: -4247469279920477541, guid: 1fd6015f445367c4795d441646527929, type: 3}
-    Counts: 040000000200000006000000
-    Delay: 2
-    Reward: 150
+    _counts: 05000000
+    _delay: 2
+    _reward: 50
   _spawnPoints:
   - {fileID: 983923273}
   - {fileID: 664154654}
@@ -4592,7 +4620,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 995a6df4040d1824ba66c6c82f0d4d53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerManager: {fileID: 450948187}
+  _gameManager: {fileID: 450948187}
 --- !u!1 &1697798586
 GameObject:
   m_ObjectHideFlags: 0

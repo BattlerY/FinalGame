@@ -60,7 +60,7 @@ public abstract class Unit : Entity
         enabled = false;
 
         if (Faction == Factions.Enemy)
-              EnemyDied(_reward);
+              EnemyDied?.Invoke(_reward);
     }
 
     private void FindOpponent()

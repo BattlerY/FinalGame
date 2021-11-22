@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class Defender : Unit
 {
-    [SerializeField] private int ArmorUp;
+    [SerializeField] private int _armorUp;
+
     public override void UseAbilities(Entity entity)
     {
         entity.TakeDamage(Damage);
-        UpArmor(ArmorUp);
+        UpArmor(_armorUp);
     }
 }

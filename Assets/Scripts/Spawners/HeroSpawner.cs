@@ -6,7 +6,7 @@ using TMPro;
 
 public class HeroSpawner : MonoBehaviour
 {
-    [SerializeField] GameManager _playerManager;
+    [SerializeField] private GameManager _gameManager;
 
     private Button[] _spawnPoints;
     private List<Unit> _curentHeroes;
@@ -33,7 +33,7 @@ public class HeroSpawner : MonoBehaviour
 
     private void CreateUnit(int heroNumber)
     {
-        if(_playerManager.TryBuy(out Unit hero))
+        if(_gameManager.TryBuy(out Unit hero))
             _curentHeroes.Add(Instantiate(hero, _spawnPoints[heroNumber].transform.position, Quaternion.identity));
     }
 }
