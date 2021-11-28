@@ -8,7 +8,7 @@ public class Defender : Unit
 
     public override void UseAbilities(Entity entity)
     {
-        entity.TakeDamage(Damage);
+        entity.TakeDamage(Damage, DamageType.Magical);
         UpArmor(_armorUp);
     }
 }

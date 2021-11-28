@@ -8,7 +8,7 @@ public class Mage : Unit
 
     public override void UseAbilities(Entity entity)
     {
-        entity.TakeDamage(Damage, true);
+        entity.TakeDamage(Damage, DamageType.Magical);
         Instantiate(_effect, entity.transform.position, Quaternion.identity, entity.transform);
     }
 }

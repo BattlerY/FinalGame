@@ -10,9 +10,9 @@ public class Stronghold : Entity
     [SerializeField] private HeroSpawner _heroSpawner;
     [SerializeField] private Slider _healthBar;
 
-    public override void TakeDamage(int damage, bool isMage = false)
+    public override void TakeDamage(int damage, DamageType damageType)
     {
-        base.TakeDamage(damage, isMage);
+        base.TakeDamage(damage, damageType);
         UpdateHealthBar();
     }
 
