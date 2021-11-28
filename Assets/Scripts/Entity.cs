@@ -1,21 +1,27 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
 
-public enum Factions
+public enum Faction
 {
     Hero,
     Enemy
+}
+
+public enum DamageType
+{
+    Magical,
+    Physical
 }
 
 public abstract class Entity : MonoBehaviour
 {
     [SerializeField] private int _maxHealth;
     [SerializeField] private int _armor;
-    [SerializeField] private Factions _faction;
+    [SerializeField] private Faction _faction;
 
     private int _curentHealth;
 
-    public Factions Faction => _faction;
+    public Faction Faction => _faction;
     public bool IsDead => _curentHealth <= 0;
     public float HealthRatio => 1f * _curentHealth / _maxHealth;
 
@@ -29,9 +35,9 @@ public abstract class Entity : MonoBehaviour
         _curentHealth = _maxHealth;
     }
 
-    public virtual void TakeDamage(int damage, bool isMage=false)
+    public virtual void TakeDamage(int damage, DamageType damageType)
     {
-        if (isMage==false) 
+        if (damageType == DamageType.Physical) 
             damage = Mathf.Max(damage - _armor, 1);
 
         _curentHealth -= damage;

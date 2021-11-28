@@ -31,7 +31,7 @@ public abstract class Unit : Entity
 
     private void Awake()
     {
-        _direction = Faction == Factions.Enemy ? -1 : 1;
+        _direction = Faction == Faction.Enemy ? -1 : 1;
         _animator = GetComponent<Animator>();
         _attackTime = 0;
     }
@@ -59,7 +59,7 @@ public abstract class Unit : Entity
         gameObject.GetComponent<BoxCollider2D>().enabled = false;
         enabled = false;
 
-        if (Faction == Factions.Enemy)
+        if (Faction == Faction.Enemy)
               EnemyDied?.Invoke(_reward);
     }
 

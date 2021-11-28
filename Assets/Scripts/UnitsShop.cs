@@ -3,7 +3,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GameManager : MonoBehaviour
+public class UnitsShop : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI _moneyText;
     [SerializeField] private List<Unit> _heroes;
@@ -22,21 +22,29 @@ public class GameManager : MonoBehaviour
         _moneyText.text = _money.ToString(); ;
 
         for (int i = 0; i < _heroes.Count; i++)
-        {
             _costTexts[i].text = _heroes[i].Cost.ToString();
-            int temp = i;
-            _buyButtons[i].onClick.AddListener(() => CheckSolvency(temp));
-        } 
     }
 
     private void OnEnable()
     {
+        for (int i = 0; i < _heroes.Count; i++)
+        {
+            int temp = i;
+            _buyButtons[i].onClick.AddListener(() => CheckSolvency(temp));
+        }
+
         Unit.EnemyDied += AddMoney;
         _enemySpawner.WaveDefeated += AddMoney;
     }
 
     private void OnDisable()
     {
+        for (int i = 0; i < _heroes.Count; i++)
+        {
+            int temp = i;
+            _buyButtons[i].onClick.RemoveListener(() => CheckSolvency(temp));
+        }
+
         Unit.EnemyDied -= AddMoney;
         _enemySpawner.WaveDefeated -= AddMoney;
     }

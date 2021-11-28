@@ -6,7 +6,7 @@ using TMPro;
 
 public class HeroSpawner : MonoBehaviour
 {
-    [SerializeField] private GameManager _gameManager;
+    [SerializeField] private UnitsShop _gameManager;
 
     private Button[] _spawnPoints;
     private List<Unit> _curentHeroes;
@@ -17,10 +17,25 @@ public class HeroSpawner : MonoBehaviour
         _curentHeroes = new List<Unit>();
 
         for (int i = 0; i < _spawnPoints.Length; i++)
-        {
             _spawnPoints[i] = transform.GetChild(i).GetComponent<Button>();
+
+    }
+
+    private void OnEnable()
+    {
+        for (int i = 0; i < _spawnPoints.Length; i++)
+        {
             int temp = i;
             _spawnPoints[i].onClick.AddListener(() => CreateUnit(temp));
+        }
+    }
+
+    private void OnDisable()
+    {
+        for (int i = 0; i < _spawnPoints.Length; i++)
+        {
+            int temp = i;
+            _spawnPoints[i].onClick.RemoveListener(() => CreateUnit(temp));
         }
     }
 
